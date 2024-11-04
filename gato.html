@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oiia Cat</title>
+</head>
+<body>
+    <img id="imgato" src="gato.png" width="600" onclick="GatOiia()">
 
+    <audio id="Sonidoiia" src="oiia.mp3" preload="auto"></audio>
+
+    <script>
+        function GatOiia() {
+            var imagen = document.getElementById('imgato');
+            var sonido = document.getElementById('Sonidoiia');
+            var gif = 'oiia.gif';
+            var Imagen = 'gato.png'; 
+            var duracionGif = 1500; 
+            imagen.src = gif;
+
+            sonido.currentTime = 0;
+            sonido.play();
+
+            imagen.style.display = 'block';
+
+            setTimeout(function() {
+                imagen.src = Imagen; 
+            }, duracionGif);
+        }
+    </script>
+</body>
+</html>
+
+<style>
+    body {
+    display: flex;               /* Usamos flexbox para centrar */
+    justify-content: center;     /* Centra horizontalmente */
+    align-items: center;         /* Centra verticalmente */
+    height: 100vh;              /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    margin: 0;                  /* Elimina el margen por defecto del body */
+    background-color: #cfcece;  /* Color de fondo opcional */
+}
+
+img {
+    max-width: 100%;            /* Asegura que la imagen no se desborde */
+    height: 10cm;
+    width: 10cm;
+}
+
+</style>
