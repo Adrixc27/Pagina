@@ -1,0 +1,123 @@
+/* Estilo General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1; /* Gris claro para el fondo */
+    color: #333; /* Texto en gris oscuro para contraste */
+}
+
+h1, h2 {
+    color: #003366; /* Azul marino para los títulos principales */
+}
+
+/* Estilo del Header */
+header {
+    background: #1a1a1a; /* Fondo negro */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+/* Estilo de la Navegación */
+nav {
+    background: #003366; /* Azul marino */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #002244; /* Azul marino oscuro al pasar el mouse */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Estilo Principal */
+main {
+    padding: 1.5rem;
+}
+
+/* Estilo de las Secciones */
+section {
+    margin-bottom: 2rem;
+    background-color: #e9ecef; /* Gris muy claro para las secciones */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none; /* Quitar puntos de las listas */
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Estilo de los Enlaces en las Secciones */
+section a {
+    color: #003366; /* Azul marino para los enlaces */
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del Footer */
+footer {
+    background: #1a1a1a; /* Fondo negro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilo Responsive (para dispositivos móviles) */
+@media (max-width: 768px) {
+    nav {
+        padding: 0.8rem 0;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
