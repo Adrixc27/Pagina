@@ -44,19 +44,13 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-    padding: 10px 20px; /* Aumentamos el tamaño de los botones */
-    display: inline-block;
-    border-radius: 5px;
 }
 
 nav a:hover {
     text-decoration: underline;
     background-color: #002244; /* Azul marino oscuro al pasar el mouse */
-}
-
-nav a:focus {
-    outline: none; /* Elimina el borde al hacer foco */
-    background-color: #002244;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* Estilo Principal */
@@ -111,11 +105,8 @@ footer p {
     }
 
     nav a {
-        font-size: 1.4rem; /* Aumentamos el tamaño de la fuente */
-        margin: 10px 0; /* Aumentamos el margen vertical entre los botones */
-        padding: 15px 30px; /* Hacemos los botones más grandes */
-        display: block; /* Aseguramos que los botones ocupen toda la línea */
-        width: 100%; /* Los botones ocupan todo el ancho disponible */
+        font-size: 1rem;
+        margin: 0 10px;
     }
 
     header h1 {
