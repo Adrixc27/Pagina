@@ -4,8 +4,8 @@ const CACHE_FILES = [
     "/index.html",
     "/styles.css",
     "/script.js",
-    "/icon-192x192.png",
-    "/icon-512x512.png"
+    "/imagen.png",
+    "/imagen.png"
 ];
 
 // Evento de instalación: almacena archivos en caché
