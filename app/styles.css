@@ -1,25 +1,172 @@
+/* Estilo global */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-}
-h1 {
-    color: #333;
-}
-p {
-    color: #666;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Gris oscuro */
+    color: #e0e0e0; /* Gris claro */
+    line-height: 1.6;
 }
 
+/* Cabecera */
+header {
+    background-color: #121212; /* Negro más claro */
+    color: #ffffff; /* Blanco puro */
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navegación */
+nav {
+    background-color: #1f2937; /* Azul grisáceo oscuro */
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+nav a {
+    color: #e0e0e0; /* Gris claro */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #374151; /* Gris azulado */
+}
+
+/* Botón de instalación */
 #install-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #f4032f; /* Rojo vibrante */
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
+    display: block;
+    margin: 2rem auto;
+    transition: background-color 0.3s;
 }
 
 #install-button:hover {
-    background-color: #0056b3;
+    background-color: #88001b; /* Rojo oscuro */
+}
+
+.secret{
+    background-color: #121212; /* Rojo vibrante */
+    color: rgb(255, 0, 43);
+    text-decoration: none;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.secret:hover{
+    background-color: #000000; 
+    text-decoration: none;
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem;
+    background-color: #252525; /* Gris oscuro */
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #121212; /* Negro más claro */
+    color: #b3b3b3; /* Gris intermedio */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: rgb(255, 0, 43); /* Rojo vibrante */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Medias queries para dispositivos móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    main {
+        padding: 1rem;
+        margin: 0.5rem auto;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    #install-button {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    main {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
+    }
+
+    #install-button {
+        font-size: 0.8rem;
+        padding: 0.6rem 1.2rem;
+    }
 }
