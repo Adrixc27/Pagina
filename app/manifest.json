@@ -1,7 +1,7 @@
 {
     "name": "numeros",
     "short_name": "Organizador",
-    "start_url": "/app.html",
+    "start_url": "app.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
