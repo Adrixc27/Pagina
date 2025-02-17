@@ -1,7 +1,7 @@
 const CACHE_NAME = "v1";
 const CACHE_FILES = [
     "/",
-    "app.html",
+    "./app.html",
     "/styles.css",
     "/script.js",
     "/gato.png",
