@@ -5,7 +5,6 @@ const CACHE_FILES = [
     "/styles.css",
     "/script.js",
     "/gato.png",
-    "/gato.png"
 ];
 
 // Evento de instalación: almacena archivos en caché
