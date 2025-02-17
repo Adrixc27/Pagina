@@ -1,7 +1,7 @@
 {
-    "name": "Economias",
-    "short_name": "Trabajo Final",
-    "start_url": "index.html",
+    "name": "numeros",
+    "short_name": "Organizador",
+    "start_url": "app.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
